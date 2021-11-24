@@ -1,6 +1,8 @@
-// Please do not use the array form (like ['tailwindcss', 'postcss-preset-env'])
-// it will create an unexpected error: Invalid PostCSS Plugin found: [0]
-
+// If you want to use other PostCSS plugins, see the following:
+// https://tailwindcss.com/docs/using-with-preprocessors
 module.exports = {
-  plugins: { tailwindcss: {}, autoprefixer: {} },
-};
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
