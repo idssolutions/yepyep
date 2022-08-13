@@ -113,7 +113,7 @@ export default function Dashboard() {
                                                         className="font-heading text-darkBlueGray-400"
                                                         contentEditable="false"
                                                     >
-                                                        opalandtinycow@gmail.com
+                                                        Invited artfularmadillo@gmail.com
                                                     </span>
                                                 </div>
                                             </td>
@@ -124,7 +124,7 @@ export default function Dashboard() {
                                                         contentEditable="false"
                                                     >
                                                         <span style={{ backgroundColor: "rgb(251, 252, 253)" }}>
-                                                            **********
+                                                            N/A
                                                         </span>
                                                         <br />
                                                     </span>
@@ -168,7 +168,7 @@ export default function Dashboard() {
                                                         className="font-heading text-darkBlueGray-400"
                                                         contentEditable="false"
                                                     >
-                                                        **********
+                                                        N/A
                                                         <br />
                                                     </span>
                                                 </div>
