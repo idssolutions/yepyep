@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState} from "react"
 export default function Dashboard() {
     const [claireIsLoggedIn, setClaireIsLoggedIn] = useState(false)
     const [input, setInput] = useState("")
@@ -253,7 +253,10 @@ export default function Dashboard() {
                     className="inline-block py-5 px-10 text-xl leading-6 text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
                     onSubmit={(e) => {
                         e.preventDefault();
-                        setClaireIsLoggedIn(true);
+                        if(input==="opal-and-tiny-cow"){
+
+                            setClaireIsLoggedIn(true);
+                        }
                     }}>Submit</button>
             </form>
         )
