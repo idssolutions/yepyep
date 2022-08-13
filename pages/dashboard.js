@@ -3,8 +3,6 @@ export default function Dashboard() {
     const [claireIsLoggedIn, setClaireIsLoggedIn] = useState(false)
     const [input, setInput] = useState("")
     if (claireIsLoggedIn) {
-
-
         return (
             <section className="py-8 bg-blueGray-50">
                 <div className="container px-4 mx-auto">
