@@ -1,4 +1,4 @@
-import { useState} from "react"
+import { useState } from "react"
 export default function Dashboard() {
     const [claireIsLoggedIn, setClaireIsLoggedIn] = useState(false)
     const [input, setInput] = useState("")
@@ -240,7 +240,13 @@ export default function Dashboard() {
         )
     } else {
         return (
-            <form className="w-1/3">
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                if (input === "opal-and-tiny-cow") {
+
+                    setClaireIsLoggedIn(true);
+                }
+            }} className="w-1/3">
                 Enter the name of your project in lowercase letters with hyhens instead of spaces. <br />
                 <br />
                 something-like-this
@@ -251,13 +257,7 @@ export default function Dashboard() {
                     type="text"></input>
                 <button
                     className="inline-block py-5 px-10 text-xl leading-6 text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
-                    onSubmit={(e) => {
-                        e.preventDefault();
-                        if(input==="opal-and-tiny-cow"){
-
-                            setClaireIsLoggedIn(true);
-                        }
-                    }}>Submit</button>
+                    type="submit">Submit</button>
             </form>
         )
     }
